@@ -1,59 +1,34 @@
-# SelectelTechnicalTask
+## Description
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.1.
+Тестовое задание в компанию `Selectel` на позицию Стажер Frontend-разработчик.  
+Приложение представляет собой мини-SPA из двух страниц с навигацией, списком элементов и подсчётом выбранных значений.
 
-## Development server
+**Используемый стек:**
 
-To start a local development server, run:
+- Angular
+- TypeScript
+- Tailwind CSS
 
-```bash
-ng serve
-```
+### Features
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- Навигация между страницами через Angular Router
+- Список элементов с чекбоксами
+- Подсчёт количества выбранных элементов и их суммарного значения в реальном времени
+- Активный раздел подсвечивается в сайдбаре и хедере
 
-## Code scaffolding
+### Architecture Notes
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+- Standalone components (Angular 19)
+- Реактивное состояние через `signal()` и `computed()`
+- Отдельный сервис `ItemsState` для хранения состояния выбранных элементов
+- Разделение на `pages/`, `components/`, и `services/`
 
-```bash
-ng generate component component-name
-```
+### Possible Improvements
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+- Обработка ошибок загрузки
+- Анимации переходов между страницами
+- Адаптация под мобильные устройства
 
-```bash
-ng generate --help
-```
+### Try it yourself !
 
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+[Ссылка на демо](https://blayzzand-st.github.io/selectel-technical-task/)

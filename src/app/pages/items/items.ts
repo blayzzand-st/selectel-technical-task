@@ -1,21 +1,19 @@
 import { Component, inject } from '@angular/core';
 import { Item } from '../../components/item/item';
-import { HttpClient } from '@angular/common/http';
-import { CheckedItemType, ItemType } from '../../types';
-import { AsyncPipe } from '@angular/common';
+import { CheckedItemType } from '../../types';
 import { ItemsState } from '../../services/items-state';
+import items from '../../../assets/data/items.json';
 
 @Component({
   selector: 'app-items',
-  imports: [Item, AsyncPipe],
+  imports: [Item],
   templateUrl: './items.html',
   styleUrl: './items.css',
 })
 export class Items {
-  private http = inject(HttpClient);
   private itemsState = inject(ItemsState);
 
-  items$ = this.http.get<ItemType[]>('/data/items.json');
+  items = items;
 
   onItemCheck(event: CheckedItemType) {
     this.itemsState.toggle(event.id, event.isChecked, event.value);

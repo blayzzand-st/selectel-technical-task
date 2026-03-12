@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Header } from './components/header/header';
 import { Sidebar } from './components/sidebar/sidebar';
@@ -7,8 +7,6 @@ import { Sidebar } from './components/sidebar/sidebar';
   selector: 'app-root',
   imports: [RouterOutlet, Header, Sidebar],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrl: './app.css',
 })
-export class App {
-  protected readonly title = signal('selectel-technical-task');
-}
+export class App {}

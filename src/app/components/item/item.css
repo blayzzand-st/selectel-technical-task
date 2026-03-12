@@ -1,0 +1,11 @@
+label:hover > div p:first-child {
+  color: var(--color-red-600);
+}
+
+input:checked + div p:first-child {
+  color: var(--color-red-600);
+}
+
+label:has(input:checked) {
+  background-color: var(--color-gray-100);
+}

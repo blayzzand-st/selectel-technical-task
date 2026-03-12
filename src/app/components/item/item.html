@@ -1,0 +1,9 @@
+<label
+  class="flex border border-gray-200 rounded-lg m-5 px-6 py-3 gap-x-3 items-baseline hover:bg-gray-100 transition-colors duration-150 ease-in-out"
+>
+  <input [id]="'item-' + data.id" type="checkbox" name="item" (change)="onCheck($event)">
+  <div>
+    <p class="select-none transition-colors duration-150 ease-in-out">{{ data.name }}</p>
+    <p class="text-lg text-gray-500">Value: {{ data.value }}</p>
+  </div>
+</label>

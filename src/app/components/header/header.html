@@ -1,1 +1,7 @@
-<p>header works!</p>
+<header class="flex justify-between px-6 py-5 h-28 border-b border-gray-200">
+  <p class="font-semibold">Раздел: <span class="text-red-600">{{ pageTitle() }}</span></p>
+  <div class="flex gap-x-10">
+    <p>Выбрано пунктов: {{ checkedCount() }}</p>
+    <p>Общее значение: {{ values() }}</p>
+  </div>
+</header>

@@ -1,1 +1,10 @@
-<p>sidebar works!</p>
+<aside class="w-72 h-full border-r border-gray-200 px-8 py-5 text-xl bg-gray-100">
+<nav class="flex flex-col">
+  <a class="hover:text-red-600 border-l border-gray-400 px-4 py-2 transition-colors duration-200 ease-in-out"
+     routerLink="/"
+     routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home Page</a>
+  <a class="hover:text-red-600 border-l border-gray-400 px-4 py-2 transition-colors duration-200 ease-in-out"
+     routerLink="/items"
+     routerLinkActive="active">Items</a>
+</nav>
+</aside>

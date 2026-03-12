@@ -1,0 +1,7 @@
+.active {
+  color: #e7000b;
+  position: relative;
+  border-left-color: #e7000b;
+  border-left-width: 3px;
+  transform: translateX(-1px);
+}

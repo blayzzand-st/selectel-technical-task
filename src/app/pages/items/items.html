@@ -1,1 +1,5 @@
-<p>items works!</p>
+<section>
+  @for (item of items$ | async; track item.id) {
+    <app-item [data]="item" (valueChanged)="onItemCheck($event)" />
+  }
+</section>
